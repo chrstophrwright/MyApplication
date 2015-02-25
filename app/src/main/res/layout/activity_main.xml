@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="@string/hello_world"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:padding="30sp"
+        android:id="@+id/textview"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Button_Text"
+        android:id="@+id/theButton"
+        android:textSize="30dp"
+        android:onClick="ButtonPress"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/exitButton"
+        android:id="@+id/exitButton"
+        android:textSize="30dp"
+        android:onClick="ButtonPress"
+        android:layout_above="@+id/theButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dealerScore"
+        android:textSize="40dp"
+        android:id="@+id/dealerTotal"
+        android:layout_above="@+id/theButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/playerScore"
+        android:textSize="40dp"
+        android:id="@+id/playerTotal"
+        android:layout_above="@+id/theButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="72dp" />
+
+</RelativeLayout>
